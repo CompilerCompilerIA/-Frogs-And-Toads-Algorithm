@@ -1,7 +1,6 @@
 import java.util.Arrays;
 
 public class Solution {
-
     public int can_Cross(int[] stones, int ind, int jumpsize, int[][] memo) {
         if (memo[ind][jumpsize] >= 0) {
             return memo[ind][jumpsize];
