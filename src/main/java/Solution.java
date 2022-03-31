@@ -1,6 +1,14 @@
 import java.util.Arrays;
 
 public class Solution {
+    public boolean canCross(int[] stones) {
+        int[][] memo = new int[stones.length][stones.length];
+        for (int[] row : memo) {
+            Arrays.fill(row, -1);
+        }
+        return can_Cross(stones, 0, 0, memo) == 1;
+    }
+
     public int can_Cross(int[] stones, int ind, int jumpsize, int[][] memo) {
         if (memo[ind][jumpsize] >= 0) {
             return memo[ind][jumpsize];
