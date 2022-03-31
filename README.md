@@ -1,1 +1,1 @@
-# -Frogs-And-Toads-Algorithm
+# Frogs-And-Toads-Algorithm
