@@ -31,4 +31,15 @@ public class Solution {
         }
         return answ;
     }
+
+    public String printer(String ans,int slides,int hops, int total_mov, int n){
+        String print_format="";
+        print_format = "******FROGS AND TOADS ALGORITHM******" + "\n";
+        print_format = print_format + "n         : " + n + "\n";
+        print_format = print_format + "Solution  : " + ans + "\n";
+        print_format = print_format + "Slides    : " + slides + "\n";
+        print_format = print_format + "Hops      : " + hops + "\n";
+        print_format = print_format + "Total Mov.: " + total_mov + "\n";
+        return print_format;
+    }
 }
